@@ -1,18 +1,12 @@
-Heroku buildpack: PhantomJS
-=======================
+heroku-buildpack-phantomjs
+=================================
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) of PhantomJS(http://phantomjs.org).
-
-Usage
------
-
-Example usage:
-
-```shell
-$ heroku create --stack cedar --buildpack https://github.com/stomita/heroku-buildpack-phantomjs.git
-
-# or if your app is already created:
-$ heroku buildpacks:add https://github.com/stomita/heroku-buildpack-phantomjs
-
-$ git push heroku master
 ```
+heroku buildpacks:add --index 1 https://github.com/forever-inc/heroku-buildpack-phantomjs.git -a <app name>
+```
+
+```
+heroku buildpacks:remove https://github.com/forever-inc/heroku-buildpack-phantomjs.git -a <app name>
+```
+
+TODO: Add more documentation
